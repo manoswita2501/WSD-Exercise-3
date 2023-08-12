@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Cake Shop web page</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,600,600i,700,700i|Satisfy|Comic+Neue:300,300i,400,400i,700,700i"
+    rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- Bootstrap Files -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+    integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+    crossorigin="anonymous"></script>
+
+  <!-- Fontawesome CDN Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Map Link -->
+  <script type='text/javascript'
+    src='http://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=AjZxhxTONeGJtI1fGud5s7MYhu_unEuMnag4FxqHUcDa8-omCraeelL0Ib99vspt'
+    async defer></script>
+
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+
+</head>
+
+<body>
+
+  <!-- ======= Top Bar ======= -->
+  <section id="navbar" class="d-flex align-items-center fixed-top navbar-transparent">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-center justify-content-lg-start">
+      <i class="bi bi-phone d-flex align-items-center"><i class="fa-solid fa-mobile-screen-button fa-lg"
+          style="color: #f0690f;"></i><span> +91 9045231687</span></i>
+      <i class="bi bi-clock ms-4 d-none d-lg-flex align-items-center"><i class="fa-solid fa-clock fa-lg"
+          style="color: #f0690f;"></i><span> Orders accepted from Monday to Saturday - 9 AM to 9 PM.</span></i>
+    </div>
+  </section>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <div class="logo me-auto">
+        <h1><a href="index.html">Dreamy Delights</a></h1>
+
+      </div>
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#menu">Menu</a></li>
+          <li><a class="nav-link scrollto" href="#gallery">Gallery</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+      <a href="#place-an-order" class="place-an-order-btn scrollto">Place Your Order</a>
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container">
+      <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+        <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+        <div class="carousel-inner" role="listbox">
+
+          <!-- Slide 1 -->
+          <div class="carousel-item active" style="background-image: url(assets/img/slide/slide-1.png);">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animate__animated animate__fadeInDown"><span>Dreamy Delights</span> Cake Shop</h2>
+                <p class="animate__animated animate__fadeInUp"> Treat yourself to a symphony of flavours and artistry
+                  with our exquisite range of cakes, where each bite is a journey through sweetness.</p>
+                <div>
+                  <a href="#menu" class="btn-menu animate__animated animate__fadeInUp scrollto">Our Menu</a>
+                  <a href="#place-an-order" class="btn-book animate__animated animate__fadeInUp scrollto">Place Your
+                    Order</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item" style="background-image: url(assets/img/slide/slide-2.png);">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animate__animated animate__fadeInDown">Crafted Elegance</h2>
+                <p class="animate__animated animate__fadeInUp">Experience the perfect fusion of flavours and design. Our
+                  cakes are handcrafted with love, transforming moments into lasting memories. Every detail matters, and
+                  we're dedicated to turning your ideas into reality.</p>
+                <div>
+                  <a href="#menu" class="btn-menu animate__animated animate__fadeInUp scrollto">Our Menu</a>
+                  <a href="#place-an-order" class="btn-book animate__animated animate__fadeInUp scrollto">Place Your
+                    Order</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="carousel-item" style="background-image: url(assets/img/slide/slide-3.png);">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animate__animated animate__fadeInDown">Celebrating with Sweetness</h2>
+                <p class="animate__animated animate__fadeInUp">
+                  From birthdays and anniversaries to parties and weddings, every occasion deserves a special touch of
+                  sweetness. Explore our confections that turn your celebrations with loved ones into pure joy.
+                </p>
+                <div>
+                  <a href="#menu" class="btn-menu animate__animated animate__fadeInUp scrollto">Our Menu</a>
+                  <a href="#place-an-order" class="btn-book animate__animated animate__fadeInUp scrollto">Place Your
+                    Order</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+        </a>
+
+        <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+        </a>
+
+      </div>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container-fluid">
+
+        <div class="row">
+
+          <div class="left">
+            <img src="assets/img/about.png" alt="" />
+            <br><br>
+          </div>
+          <div class="right">
+            <!-- <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch"> -->
+            <div class="content">
+              <h3><strong>About Us</strong></h3>
+              <p>
+                Welcome to Dreamy Delights, where sweetness takes center stage and every bite is a delightful journey.
+                Established with a passion for crafting exceptional cakes, we believe in turning your special moments
+                into unforgettable memories through our delectable creations.
+              </p>
+              <p class="fst-italic">
+                At Dreamy Delights, our story is one of flour, sugar, and your dreams baked to absolute perfection.
+                Founded in 2020 during the pandemic, our cake shop has been a true labour of love from the very
+                beginning. What started as a small venture fueled by a love for baking and an eye for aesthetics has now
+                blossomed into a haven for cake enthusiasts seeking exquisite flavors and artistic designs to celebrate
+                their special occasions.
+              </p>
+              <ul>
+                <li><i class="fa-solid fa-check-double"></i> Cakes infused with both flavours that will delight the
+                  taste buds and designs that will captivate your eyes.</li>
+                <li><i class="fa-solid fa-check-double"></i> Quality is at the heart of everything we do to ensure that
+                  each cake not only looks stunning but also tastes truly exceptional.</li>
+                <li><i class="fa-solid fa-check-double"></i> Cakes that perfectly complement the theme and atmosphere of
+                  your occasion.</li>
+              </ul>
+              <p>
+                We invite you to step into our world of sweetness and artistry. Come savor the flavors, admire the
+                designs, and experience the warmth that defines Dreamy Delights. Whether it's a casual visit to satisfy
+                your sweet tooth or a consultation for your next big celebration, we're here to make every moment a
+                little bit sweeter.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Menu Section ======= -->
+    <section id="menu" class="menu">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Check our <span>Specials</span></h2>
+        </div>
+
+        <div class="row menu-container">
+
+          <div class="col-lg-6 menu-item">
+            <div class="menu-content">
+              <a href="#">Velvet Dream</a><span>Rs. 650</span>
+            </div>
+            <div class="menu-ingredients">
+              Red velvet cake with cream cheese frosting.
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item">
+            <div class="menu-content">
+              <a href="#">Chocolate Symphony</a><span>Rs. 850</span>
+            </div>
+            <div class="menu-ingredients">
+              Moist chocolate cake with velvety ganache.
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item">
+            <div class="menu-content">
+              <a href="#">Raspberry Elegance</a><span>Rs. 800</span>
+            </div>
+            <div class="menu-ingredients">
+              White cake infused with raspberry, adorned with fresh berries.
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item">
+            <div class="menu-content">
+              <a href="#">Lemon Zest</a><span>Rs. 750</span>
+            </div>
+            <div class="menu-ingredients">
+              Light lemon-flavored cake with tangy curd.
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item">
+            <div class="menu-content">
+              <a href="#">Vanilla Sprinkle</a><span>Rs. 650</span>
+            </div>
+            <div class="menu-ingredients">
+              Vanilla cupcake with sprinkles and buttercream.
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item">
+            <div class="menu-content">
+              <a href="#">Tropical Bliss</a><span>Rs. 650</span>
+            </div>
+            <div class="menu-ingredients">
+              Coconut and pineapple cake with a tropical fruit medley.
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item">
+            <div class="menu-content">
+              <a href="#">Mango Tango</a><span>Rs. 850</span>
+            </div>
+            <div class="menu-ingredients">
+              Mango-infused sponge cake with creamy mango mousse.
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item">
+            <div class="menu-content">
+              <a href="#">Triple Chocolate Delight</a><span>Rs. 900</span>
+            </div>
+            <div class="menu-ingredients">
+              Layers of chocolate cake, mousse, and ganache.
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item">
+            <div class="menu-content">
+              <a href="#">Cookies 'n Cream</a><span>Rs. 700</span>
+            </div>
+            <div class="menu-ingredients">
+              Chocolate cupcake with cookie pieces and cookies and cream frosting.
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Menu Section -->
+
+    <!-- ======= Place your Order Section ======= -->
+    <section id="place-an-order" class="place-an-order">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Celebrate your <span>Special Occasions</span> with us!</h2>
+          <p>Bring home your box of happiness. We're just a message away!</p>
+        </div>
+
+        <form>
+          <div class="row">
+            <div class="col-lg-4 col-md-6 form-group">
+              <input type="text" name="name" class="form-control" id="name" placeholder="Your Full Name"
+                data-rule="minlen:4" data-msg="Please enter at least 6 characters!">
+              <div class="validate"></div>
+            </div>
+            <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
+              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
+                data-rule="email" data-msg="Please enter a valid email!">
+              <div class="validate"></div>
+            </div>
+            <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
+              <input type="text" class="form-control" name="phone" id="phone" placeholder="Your Phone"
+                data-rule="minlen:4" data-msg="Please enter at least 4 characters!">
+              <div class="validate"></div>
+            </div>
+            <div class="col-lg-4 col-md-6 form-group mt-3">
+              <input type="text" name="date" class="form-control" id="date" placeholder="Cake Delivery Date"
+                data-rule="minlen:4" data-msg="Please enter at least 4 characters!">
+              <div class="validate"></div>
+            </div>
+            <div class="col-lg-4 col-md-6 form-group mt-3">
+              <input type="text" class="form-control" name="time" id="time" placeholder="Cake Delivery Time"
+                data-rule="minlen:6" data-msg="Please enter at least 4 characters!">
+              <div class="validate"></div>
+            </div>
+            <div class="col-lg-4 col-md-6 form-group mt-3">
+              <input type="number" class="form-control" name="people" id="people"
+                placeholder="How many people will have the cake?" data-rule="minlen:1"
+                data-msg="Please enter at least 1 character!">
+              <div class="validate"></div>
+            </div>
+          </div>
+          <div class="form-group mt-3">
+            <textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea>
+            <div class="validate"></div>
+          </div>
+          <div class="mb-3">
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your order request has been placed with us. Wait for us to call you back or send
+              an email to confirm your order. Thank you for your patience!</div>
+          </div>
+          <div class="text-center"><button type="submit">Send Message</button></div>
+        </form>
+
+      </div>
+    </section><!-- End Place Your Order Section -->
+
+    <!-- ======= Gallery Section ======= -->
+    <section id="gallery" class="gallery">
+      <div class="container-fluid">
+
+        <div class="section-title">
+          <h2>A sneak peek of <span>your Dreamy Delights</span></h2>
+          <p>Explore our gallery showcasing a visual feast of our meticulously crafted confections. Each photo captures
+            the essence of our hardwork and artistry, and the delightful moments our cakes have been a part of.</p>
+        </div>
+
+        <div class="row g-0">
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-1.png" class="gallery-lightbox">
+                <img src="assets/img/gallery/gallery-1.png" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-2.png" class="gallery-lightbox">
+                <img src="assets/img/gallery/gallery-2.png" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-3.png" class="gallery-lightbox">
+                <img src="assets/img/gallery/gallery-3.png" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-4.png" class="gallery-lightbox">
+                <img src="assets/img/gallery/gallery-4.png" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-5.png" class="gallery-lightbox">
+                <img src="assets/img/gallery/gallery-5.png" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-6.png" class="gallery-lightbox">
+                <img src="assets/img/gallery/gallery-6.png" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-7.png" class="gallery-lightbox">
+                <img src="assets/img/gallery/gallery-7.png" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-8.png" class="gallery-lightbox">
+                <img src="assets/img/gallery/gallery-8.png" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-9.png" class="gallery-lightbox">
+                <img src="assets/img/gallery/gallery-9.png" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-10.png" class="gallery-lightbox">
+                <img src="assets/img/gallery/gallery-10.png" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-11.png" class="gallery-lightbox">
+                <img src="assets/img/gallery/gallery-11.png" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-12.png" class="gallery-lightbox">
+                <img src="assets/img/gallery/gallery-12.png" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-13.png" class="gallery-lightbox">
+                <img src="assets/img/gallery/gallery-13.png" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-14.png" class="gallery-lightbox">
+                <img src="assets/img/gallery/gallery-14.png" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-15.png" class="gallery-lightbox">
+                <img src="assets/img/gallery/gallery-15.png" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-16.png" class="gallery-lightbox">
+                <img src="assets/img/gallery/gallery-16.png" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-17.png" class="gallery-lightbox">
+                <img src="assets/img/gallery/gallery-17.png" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-18.png" class="gallery-lightbox">
+                <img src="assets/img/gallery/gallery-18.png" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-19.png" class="gallery-lightbox">
+                <img src="assets/img/gallery/gallery-19.png" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-20.png" class="gallery-lightbox">
+                <img src="assets/img/gallery/gallery-20.png" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Gallery Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2><span>Contact</span> Us</h2>
+        </div>
+      </div>
+
+      <script type='text/javascript'>
+        function GetMap() {
+          var map = new Microsoft.Maps.Map('#myMap', {
+            credentials: 'AjZxhxTONeGJtI1fGud5s7MYhu_unEuMnag4FxqHUcDa8-omCraeelL0Ib99vspt'
+          });
+
+          //Request the user's location
+          navigator.geolocation.getCurrentPosition(function (position) {
+            var loc = new Microsoft.Maps.Location(
+              position.coords.latitude,
+              position.coords.longitude);
+
+            //Add a pushpin at the user's location.
+            var pin = new Microsoft.Maps.Pushpin(loc);
+            map.entities.push(pin);
+
+            //Center the map on the user's location.
+            map.setView({ center: loc, zoom: 15 });
+          });
+        }
+      </script>
+
+      <div class="container">
+        <div id="myMap" style="position:relative;width:100%;height:400px;"></div>
+      </div>
+
+      <script>
+        window.addEventListener("load", () => {
+          navigator.geolocation.getCurrentPosition((pos) => {
+            var map = new Microsoft.Maps.Map('#map');
+          })
+        })
+      </script>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <h3>Dreamy Delights</h3>
+      <div class="social-links">
+        <a href="#" class="facebook"><i class="fa-brands fa-square-facebook"></i></a>
+        <a href="#" class="instagram"><i class="fa-brands fa-square-instagram"></i></a>
+      </div>
+      <div class="copyright">
+        &copy; Copyright <strong><span>Dreamy Delights</span></strong>. All Rights Reserved.
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="fa-solid fa-arrow-up"></i></a>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
